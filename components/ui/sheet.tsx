@@ -137,4 +137,5 @@ export {
   SheetFooter,
   SheetTitle,
   SheetDescription,
+  fix: correction des erreurs d'accessibilité dans Sheet
 };
