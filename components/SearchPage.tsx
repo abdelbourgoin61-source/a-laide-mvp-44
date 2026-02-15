@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react';
+import { Search, MapPin, Filter, ChevronLeft, Clock, Loader2, AlertCircle } from 'lucide-react';
 import { motion } from 'motion/react';
-import { ArrowLeft, Search, Filter, MapPin, AlertCircle, Loader2 } from 'lucide-react';
 import { Button } from './ui/button';
-import { Input } from './ui/input';
 import { Card } from './ui/card';
+import { Input } from './ui/input';
 import { Badge } from './ui/badge';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 import { ProviderCard } from './ProviderCard';
 import { getAllProviders, getServices, isSupabaseConfigured } from '../src/lib/supabase';
-import { toast } from 'sonner';
+import { toast } from 'sonner@2.0.3';
 
 interface SearchPageProps {
   serviceId?: string;
@@ -86,7 +87,7 @@ export function SearchPage({ serviceId, onBack, onProviderSelect }: SearchPagePr
               size="sm"
               className="gap-2"
             >
-              <ArrowLeft className="h-4 w-4" />
+              <ChevronLeft className="h-4 w-4" />
               Retour
             </Button>
             <h1 className="text-2xl font-bold text-gray-900">
@@ -258,4 +259,6 @@ export function SearchPage({ serviceId, onBack, onProviderSelect }: SearchPagePr
       </div>
     </div>
   );
+ fix: add missing imports and correct toast import
+ 
 }
