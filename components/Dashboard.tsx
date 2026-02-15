@@ -24,7 +24,7 @@ import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, D
 import { Textarea } from './ui/textarea';
 import { Label } from './ui/label';
 import { mockMissions } from '../src/lib/mockData';
-import { toast } from 'sonner';
+import { toast } from 'sonner@2.0.3';
 
 interface DashboardProps {
   onBack: () => void;
@@ -521,4 +521,5 @@ export function Dashboard({ onBack, onViewProvider }: DashboardProps) {
       </Dialog>
     </div>
   );
+  fix: correct toast import to sonner@2.0.3
 }
