@@ -278,4 +278,5 @@ export function Auth({ onBack, onSuccess }: AuthProps) {
       </div>
     </div>
   );
+fix: correct toast import to sonner@2.0.3  
 }
